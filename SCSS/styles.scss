@@ -1,0 +1,77 @@
+
+nav.navbar {
+    img {
+      src: "/imagenes/logo.jpg";
+      alt: "logo-paw";
+      class: "logo";
+    }
+    ul {
+      li {
+        a[href="../index.html"] { 
+          
+         }
+      }
+      li {
+        a[href="./adopta2.html"] { content: "Adoptá"; }
+      }
+      li {
+        a[href="./contacto.html"] { content: "Contacto"; }
+      }
+      li {
+        a[href="./galeriados.html"] { content: "Galería"; }
+      }
+      li {
+        a[href="https://www.google.com"] { content: "Nuestras redes"; }
+      }
+    }
+  }
+
+  header {
+    h1.page-title { 
+
+     }
+    h2 { 
+
+    }
+  }
+
+  main {
+ 
+    section {
+      p
+      }
+    }
+
+    div#carouselExampleIndicators.carousel.slide {
+      div.carousel-indicators {
+        button[type="button"][data-bs-target="#carouselExampleIndicators"][data-bs-slide-to="0"](class="active" aria-current="true" aria-label="Slide 1")) { content: ""; }
+        button[type="button"][data-bs-target="#carouselExampleIndicators"][data-bs-slide-to="1"](aria-label="Slide 2") { content: ""; }
+        button[type="button"][data-bs-target="#carouselExampleIndicators"][data-bs-slide-to="2"](aria-label="Slide 3") { content: ""; }
+      }
+      div.carousel-inner {
+        div.carousel-item.active {
+          img(src="../imagenes/adopta1.jpg", class="adopt1", alt="adoptar1");
+        }
+        div.carousel-item {
+          img(src="../imagenes/adopta2.jpg", class="d-block w-100", alt="adoptar2");
+        }
+        div.carousel-item {
+          img(src="../imagenes/adopta3.jpg", class="d-block w-100", alt="adoptar3");
+        }
+      }
+      button.carousel-control-prev(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide="prev") {
+        span.carousel-control-prev-icon(aria-hidden="true") { content: ""; }
+        span.visually-hidden { content: "Previous"; }
+      }
+      button.carousel-control-next(type="button", data-bs-target="#carouselExampleIndicators", data-bs-slide="next") {
+        span.carousel-control-next-icon(aria-hidden="true") { content: ""; }
+        span.visually-hidden { content: "Next"; }
+      }
+    }
+  
+  footer { 
+
+  }
+
+@import "partials/index"
+@import "partials/contacto"
